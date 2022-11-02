@@ -1,0 +1,320 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*custom styles*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+}
+.container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.header {
+  position: relative;
+  h1 {
+    color: rgb(255, 213, 25);
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+}
+.bg {
+  padding: 1rem 0;
+  background-color: black;
+}
+.fa-bars,
+.fa-circle-xmark {
+  color: rgb(255, 213, 25);
+  position: absolute;
+  font-size: 2rem;
+  left: -50px;
+  top: 12px;
+  cursor: pointer;
+  z-index: 9999;
+}
+.sidebar {
+  height: 98.3vh;
+  position: absolute;
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.829);
+  left: -100px;
+  top: 0;
+  z-index: 999;
+  ul {
+    margin: 10rem;
+  }
+  li {
+    margin: 2rem 0;
+  }
+  a {
+    color: rgb(255, 213, 25);
+    text-decoration: none;
+    font-size: 2rem;
+    &:hover {
+      color: rgb(245, 120, 120);
+    }
+  }
+  div {
+    margin-bottom: 1rem;
+    color: orange;
+    font-size: 2rem;
+    cursor: pointer;
+    i {
+      margin-right: 1rem;
+    }
+  }
+}
+img {
+  height: 444px;
+  width: 300px;
+  object-fit: cover;
+  display: block;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.movies {
+  margin: 5rem;
+  li {
+    margin: 0 2rem;
+    padding: 4rem 0;
+    width: 300px;
+    height: 600px;
+  }
+  h2 {
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+    font-weight: 600;
+    width: 100%;
+  }
+}
+body {
+  background-color: rgb(255, 227, 103);
+}
+.details {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.774);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  button {
+    color: black;
+    background-color: rgb(255, 213, 25);
+    border-radius: 8px;
+    border: 1px solid rgb(255, 213, 25);
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+}
+.img-container {
+  position: relative;
+  &:hover > div {
+    display: flex !important;
+  }
+}
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.986);
+  top: 93px;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  color: white;
+  bottom: -200vh;
+}
+.fa-xmark {
+  font-size: 3rem;
+  &:hover {
+    color: rgb(255, 213, 25);
+    cursor: pointer;
+  }
+}
+
+.content {
+  margin-top: 2rem;
+  h3 {
+    font-size: 1.5rem;
+  }
+  img {
+    flex: 0 1 28%;
+    height: auto;
+    align-self: flex-start;
+  }
+  & > div {
+    flex: 0 1 68%;
+    text-align: left;
+    margin-left: 2rem;
+    span {
+      color: rgb(255, 227, 103);
+    }
+  }
+  p {
+    margin: 1rem 0;
+  }
+}
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.pictures {
+  text-align: left;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.footer {
+  padding: 2rem 0;
+  color: white;
+  background-color: black;
+  a {
+    font-size: 2rem;
+    color: white;
+    i {
+      margin-top: 1rem;
+    }
+    &:hover {
+      color: rgb(255, 213, 25);
+    }
+  }
+}
